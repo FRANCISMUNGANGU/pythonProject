@@ -4,8 +4,9 @@ def sum(a, b):
         b = int(b)
     except ValueError:
         return "Invalid input"
+    message = "The sum is : "
     result = a + b
-    print(result)
+    print(message + str(result))
     if a == b:
         return "a is equal to b"
     else:
@@ -16,8 +17,9 @@ def difference(a, b):
         b = int(b)
     except ValueError:
         return "Invalid input"
+    message = "The difference is : "
     result = a - b
-    print(result)
+    print(message + str(result))
     if a == b:
         return "a is equal to b"
     else:
@@ -28,8 +30,9 @@ def product(a, b):
         b = int(b)
     except ValueError:
         return "Invalid input"
+    message = "The product is : "
     result = a * b
-    print(result)
+    print(message + str(result))
     if a == b:
         return "a is equal to b"
     else:
@@ -45,7 +48,8 @@ def division(a, b):
         return "Invalid input"
     except ZeroDivisionError:
         return "Division by zero"
-    print(result)
+    message = "The quotient is : "
+    print(message + str(result))
     if a == b:
         return "a is equal to b"
     else:
